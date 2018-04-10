@@ -1,2 +1,10 @@
 # led-flash
 Hardware LED flasher for microcontrollers.
+
+This project is a hardware add-on for microcontrollers that provides a flashing LED. It saves clock cycles and frees up resources such as timers to be used for more important tasks. All is controlled using only one output pin on the microcontroller.
+
+The project utilises a single supply opamp set up as an oscillator to drive the LED, with Vin connected to an output pin of the MCU. Therefore, when the pin is set ```HIGH```, the led will flash.
+
+Upcoming changes:
+- Provide LED-on or LED-off when not flashing
+- Transistor LED control to reduce drain on opamp?
